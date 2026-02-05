@@ -21,10 +21,9 @@ async function animateTitle() {
     await wait(500);
     enlargeTitle();
     moveSideBlocks();
-    await wait(animTime * 0.75);
-    moveBottomBlock();
-    await wait(animTime * 0.75);
+    await wait(animTime * 0.33);
     await showSideBar();
+    moveBottomBlock();
 }
 
 function enlargeTitle() {

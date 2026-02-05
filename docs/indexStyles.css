@@ -22,8 +22,9 @@
 #bodyTextCont {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 60%;
     height: 86vh;
+    background-color: rgb(10, 13, 69);
 }
 .sideBar {
     display: flex;
@@ -69,13 +70,13 @@
 }
 #downBlock {
     height: 86vh;
-    width: 100%;
+    width: 60%;
 }
 div {
     transform-origin: center;
 }
 body {
-    background-color: rgb(10, 13, 69);
+    background-color: rgb(3, 4, 29);
     overflow-x: hidden;
 }
 html, body {
