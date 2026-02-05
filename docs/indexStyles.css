@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 14vh;
+    height: 16vh;
     margin-top: 0;
     background-color: rgb(3, 7, 99);
 }
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     width: 60%;
-    height: 86vh;
+    height: 84vh;
     background-color: rgb(10, 13, 69);
 }
 .sideBar {
@@ -31,9 +31,37 @@
     position: absolute;
     background-color: rgb(34, 41, 51);
     width: 20%;
-    min-height: 86vh;
+    min-height: 84vh;
     transition: transform 1s ease;
     z-index: 15;
+}
+.outline {
+    background-color: rgb(209, 119, 2);
+    position: absolute;
+}
+.tOutline {
+    width: 100%;
+    height: 0.5vw;
+    transition: transform 0.66s ease;
+}
+.sOutline {
+    width: 0.5vw;
+    height: 100%;
+}
+#tbtOutline {
+    align-self: flex-start;
+    transform: translateY(-100%);
+}
+#tbbOutline {
+    align-self: flex-end;
+    transform: translateY(100%);
+}
+#slsOutline {
+    margin-right: 0;
+    margin-left: 97.5%;
+}
+#srsOutline {
+
 }
 #leftBar {
     transform: translateX(-300%);
@@ -51,7 +79,7 @@
     z-index: 10;
 }
 .horizBlock {
-    height: 14vh;
+    height: 16vh;
     width: 50vw;
 }
 #leftBlock {
@@ -65,11 +93,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 86vh;
+    height: 84vh;
     margin-top: 0;
 }
 #downBlock {
-    height: 86vh;
+    height: 84vh;
     width: 100%;
 }
 div {

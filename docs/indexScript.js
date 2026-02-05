@@ -5,6 +5,7 @@ const rightBlock = document.getElementById('rightBlock');
 const downBlock = document.getElementById('downBlock');
 const leftBar = document.getElementById('leftBar');
 const rightBar = document.getElementById('rightBar');
+const topBarOutlines = Array.from(document.querySelectorAll('.tbOutline'));
 const targetTitleScale = 0.5;
 const horizBlockEnd = 150;
 const downBlockEnd = 100;
@@ -21,7 +22,8 @@ async function animateTitle() {
     await wait(500);
     enlargeTitle();
     moveSideBlocks();
-    await wait(animTime * 0.33);
+    await wait(animTime * 0.5);
+    showTopOutline();
     await showSideBar();
     moveBottomBlock();
 }
@@ -51,6 +53,14 @@ async function moveBottomBlock() {
     await wait(animTime);
 
     downBlock.style.height = 0;
+}
+
+async function showTopOutline() {
+    topBarOutlines.forEach(outline => {
+        outline.style.transform = `translateY(${0}%)`;
+    });
+
+    await wait(animTime * 0.66);
 }
 
 async function showSideBar() {
