@@ -3,8 +3,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 10vh;
-    margin-top: 1vh;
+    height: 14vh;
+    margin-top: 0;
+    background-color: rgb(3, 7, 99);
 }
 .mainText {
     color: rgb(227, 223, 205);
@@ -22,7 +23,22 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 88vh;
+    height: 86vh;
+}
+.sideBar {
+    display: flex;
+    position: absolute;
+    background-color: rgb(34, 41, 51);
+    width: 20%;
+    min-height: 86vh;
+    transition: transform 1s ease;
+    z-index: 5;
+}
+#leftBar {
+    transform: translateX(-300%);
+}
+#rightBar {
+    transform: translateX(300%);
 }
 .bodyText {
     font-size: 1.25vw;
@@ -30,12 +46,11 @@
 .cover {
     background-color: rgb(3, 4, 29);
     position: absolute;
-    transform-origin: center;
     transition: transform 1s ease;
     z-index: 10;
 }
 .horizBlock {
-    height: 12vh;
+    height: 14vh;
     width: 50vw;
 }
 #leftBlock {
@@ -49,12 +64,15 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 88vh;
-    margin-top: 1vh;
+    height: 86vh;
+    margin-top: 0;
 }
 #downBlock {
-    height: 88vh;
+    height: 86vh;
     width: 100%;
+}
+div {
+    transform-origin: center;
 }
 body {
     background-color: rgb(10, 13, 69);
