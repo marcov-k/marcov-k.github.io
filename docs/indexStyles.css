@@ -33,7 +33,7 @@
     width: 20%;
     min-height: 86vh;
     transition: transform 1s ease;
-    z-index: 5;
+    z-index: 15;
 }
 #leftBar {
     transform: translateX(-300%);
@@ -70,7 +70,7 @@
 }
 #downBlock {
     height: 86vh;
-    width: 60%;
+    width: 100%;
 }
 div {
     transform-origin: center;
