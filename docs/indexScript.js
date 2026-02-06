@@ -25,7 +25,7 @@ async function animateTitle() {
     await wait(animTime * 0.5);
     showTopOutline();
     await showSideBar();
-    moveBottomBlock();
+    await moveBottomBlock();
 }
 
 function enlargeTitle() {
