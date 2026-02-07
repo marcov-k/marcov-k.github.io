@@ -7,10 +7,10 @@
         <title>Marco's Homepage</title>
     </head>
     <body>
-        <div class="titleBar mainText">
+        <div class="titleBar overlay">
             <div id="tbtOutline" class="outline tOutline tbOutline"></div>
             <div id="leftBlock" class="horizBlock cover"></div>
-            <h1 id="titleText">Marco Vasko-Klima</h1>
+            <h1 id="titleText" class="mainText overlay">Marco Vasko-Klima</h1>
             <div id="rightBlock" class="horizBlock cover"></div>
             <div id="tbbOutline" class="outline tOutline tbOutline"></div>
         </div>
@@ -20,6 +20,17 @@
                 <div id="slsOutline" class="outline sOutline"></div>
             </div>
             <div id="bodyTextCont">
+                <div id="unlockBGMain" class="unlockBG">
+                    <div id="unlockBGLeft" class="unlockBG unlockMoveBG">
+                        <div id="unlockOutlineL" class="unlockOutline"></div>
+                    </div>
+                    <button id="unlockButton" onclick="unlock()">
+                        <p id="unlockText" class="mainText">Unlock</p>
+                    </button>
+                    <div id="unlockBGRight" class="unlockBG unlockMoveBG">
+                        <div id="unlockOutlineR" class="unlockOutline"></div>
+                    </div>
+                </div>
                 <p class="bodyText mainText">Test text please ignore</p>
             </div>
             <div id="rightBar" class="sideBar">

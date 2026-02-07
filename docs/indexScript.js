@@ -1,16 +1,29 @@
 const body = document.body;
+
 const titleText = document.getElementById('titleText');
+
 const leftBlock = document.getElementById('leftBlock');
 const rightBlock = document.getElementById('rightBlock');
 const downBlock = document.getElementById('downBlock');
+
 const leftBar = document.getElementById('leftBar');
 const rightBar = document.getElementById('rightBar');
+
 const topBarOutlines = Array.from(document.querySelectorAll('.tbOutline'));
+
+const unlockButton = document.getElementById('unlockButton');
+const unlockBGMain = document.getElementById('unlockBGMain');
+const unlockBGLeft = document.getElementById('unlockBGLeft');
+const unlockBGRight = document.getElementById('unlockBGRight');
+
 const targetTitleScale = 0.5;
 const horizBlockEnd = 150;
 const downBlockEnd = 100;
 const sideBarEnd = 200;
 const animTime = 1000;
+const unlockBEnd = '-50vh';
+const unlockBRot = '540deg';
+const unlockBGEnd = 100;
 
 async function windowLoad() {
     body.style.overflowY = 'hidden';
@@ -71,6 +84,29 @@ async function showSideBar() {
     rightBar.style.transform = `translateX(${rightPos})`;
 
     await wait(animTime);
+}
+
+async function unlock() {
+    await launchButton();
+    await openUnlock();
+}
+
+async function launchButton() {
+    unlockButton.style.transform = `translateY(${unlockBEnd}) rotate(${unlockBRot})`;
+    await wait(animTime * 0.3);
+}
+
+async function openUnlock() {
+    let leftPos = -unlockBGEnd + '%';
+    let rightPos = unlockBGEnd + '%';
+
+    unlockBGLeft.style.transform = `translateX(${leftPos})`;
+    unlockBGRight.style.transform = `translateX(${rightPos})`;
+
+    await wait(animTime * 0.5);
+
+    unlockBGMain.style.width = 0;
+    unlockBGMain.style.height = 0;
 }
 
 function wait(ms) {
