@@ -7,9 +7,65 @@
     --accent-gray: rgb(34, 41, 51);
     --outline-accent-color: black;
 }
+
+/* Background color classes */
+.coverColor {
+    background-color: var(--cover-color);
+}
+.outlineColor {
+    background-color: var(--outline-color);
+}
+.accentBlue {
+    background-color: var(--accent-blue);
+}
+.bgColor {
+    background-color: var(--bg-color);
+}
+.accentGray {
+    background-color: var(--accent-gray);
+}
+.outlineAccentColor {
+    background-color: var(--outline-accent-color);
+}
+
+/* General classes/elements */
 .overlay {
     z-index: 15;
 }
+.mainText {
+    color: var(--text-color);
+    transform-origin: center;
+}
+.centeredText {
+    text-align: center;
+}
+.outline {
+    position: absolute;
+}
+.cover {
+    position: absolute;
+    transition: transform 1s ease;
+    z-index: 30;
+}
+button {
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+div {
+    transform-origin: center;
+}
+body {
+    background-color: var(--cover-color);
+    overflow-x: hidden;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Title bar */
 .titleBar {
     display: flex;
     position: relative;
@@ -18,12 +74,6 @@
     width: 100%;
     height: 16vh;
     margin-top: 0;
-    background-color: var(--accent-blue);
-}
-.mainText {
-    color: var(--text-color);
-    text-align: center;
-    transform-origin: center;
 }
 #titleText {
     font-size: 10vw;
@@ -31,65 +81,20 @@
     transition: transform 1s ease;
     white-space: nowrap;
 }
-#bodyTextCont {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    height: 84vh;
-    background-color: var(--bg-color);
-}
-.sideBar {
-    display: flex;
-    position: absolute;
-    background-color: var(--accent-gray);
-    width: 20%;
-    min-height: 84vh;
-    transition: transform 1s ease;
-    z-index: 35;
-}
-.outline {
-    background-color: var(--outline-color);
-    position: absolute;
-}
 .tOutline {
     width: 100%;
     height: 0.5vw;
     transition: transform 0.66s ease;
 }
-.sOutline {
-    width: 0.5vw;
-    height: 100%;
-}
+
 #tbtOutline {
     align-self: flex-start;
     transform: translateY(-100%);
 }
+
 #tbbOutline {
     align-self: flex-end;
     transform: translateY(100%);
-}
-#slsOutline {
-    margin-right: 0;
-    margin-left: 97.5%;
-}
-#srsOutline {
-
-}
-#leftBar {
-    transform: translateX(-300%);
-}
-#rightBar {
-    transform: translateX(300%);
-}
-.bodyText {
-    font-size: 1.25vw;
-    position: absolute;
-}
-.cover {
-    background-color: var(--cover-color);
-    position: absolute;
-    transition: transform 1s ease;
-    z-index: 30;
 }
 .horizBlock {
     height: 16vh;
@@ -101,14 +106,54 @@
 #rightBlock {
     transform: translateX(50%);
 }
+
+/* Main page */
 #pageBody {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 84vh;
+    min-height: 84vh;
     margin-top: 0;
+}
+#downBlock {
+    height: 84vh;
+    width: 100%;
+    z-index: 20;
+}
+
+/* Page edges */
+.sideBar {
+    display: flex;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    transition: transform 1s ease;
+    z-index: 35;
+    border-color: var(--outline-color);
+    border-style: solid;
+    border-width: 0;
+}
+#leftBar {
+    transform: translateX(-300%);
+    border-right-width: 0.5vw;
+}
+#rightBar {
+    transform: translateX(300%);
+    border-left-width: 0.5vw;
+}
+
+/* Content lock */
+#bodyLockCont {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 62%;
+    height: 84vh;
+    transform-origin: center;
+    transform: translateX(0);
+    z-index: 5;
 }
 .unlockBG {
     display: flex;
@@ -125,27 +170,15 @@
 .unlockMoveBG {
     display: flex;
     position: relative;
-    background-color: var(--accent-blue);
     height: 100%;
     width: 50%;
-}
-.unlockOutline {
-    position: absolute;
-    background-color: var(--outline-accent-color);
-    height: 100%;
-    width: 0.5vw;
+    border: 0 solid var(--outline-accent-color);
 }
 #unlockBGLeft {
-    justify-content: flex-end;
+    border-right-width: 0.5vw;
 }
 #unlockBGRight {
-    justify-content: flex-start;
-}
-#unlockOutlineL {
-
-}
-#unlockOutlineR {
-
+    border-left-width: 0.5vw;
 }
 #unlockButton {
     display: flex;
@@ -170,17 +203,11 @@
 #unlockText {
     font-size: 1.5vw;
 }
-#downBlock {
-    height: 84vh;
-    width: 100%;
-    z-index: 20;
-}
+
+/* Projects grid */
 #projectsCont {
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 5vh;
@@ -188,21 +215,23 @@
     align-items: center;
     width: 100%;
 }
+
+/* Projects title bar */
 #projTitleBG {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent-gray);
     width: 100%;
     transform-origin: center;
     height: 7vh;
     border-bottom: 0.5vw solid black;
 }
 #projTitleText {
-    color: var(--text-color);
     font-size: 2vw;
     text-align: center;
 }
+
+/* Projects grid content */
 #projBoxCont {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -220,12 +249,9 @@
     height: 18vh;
     transform-origin: center;
     border: 0.5vw solid black;
-    background-color: var(--accent-gray);
 }
 .projectName {
-    color: var(--text-color);
     font-size: 1.1vw;
-    text-align: center;
 }
 .projectButton {
     display: flex;
@@ -244,24 +270,5 @@
     outline-color: var(--cover-color);
 }
 .projButtonText {
-    color: var(--text-color);
     font-size: 1vw;
-    text-align: center;
-}
-button {
-    box-shadow: none;
-    border: none;
-    cursor: pointer;
-}
-div {
-    transform-origin: center;
-}
-body {
-    background-color: var(--cover-color);
-    overflow-x: hidden;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
 }

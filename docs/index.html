@@ -7,65 +7,75 @@
         <title>Marco's Homepage</title>
     </head>
     <body>
-        <div class="titleBar overlay">
-            <div id="tbtOutline" class="outline tOutline tbOutline"></div>
-            <div id="leftBlock" class="horizBlock cover"></div>
-            <h1 id="titleText" class="mainText overlay">Marco Vasko-Klima</h1>
-            <div id="rightBlock" class="horizBlock cover"></div>
-            <div id="tbbOutline" class="outline tOutline tbOutline"></div>
+        <div class="titleBar overlay accentBlue">
+            <div id="tbtOutline" class="outline tOutline tbOutline outlineColor"></div>
+            <div id="leftBlock" class="horizBlock cover coverColor"></div>
+            <h1 id="titleText" class="mainText centeredText overlay">Marco Vasko-Klima</h1>
+            <div id="rightBlock" class="horizBlock cover coverColor"></div>
+            <div id="tbbOutline" class="outline tOutline tbOutline outlineColor"></div>
         </div>
-        <div id="pageBody">
-            <div id="downBlock" class="cover"></div>
-            <div id="leftBar" class="sideBar">
-                <div id="slsOutline" class="outline sOutline"></div>
-            </div>
-            <div id="bodyTextCont">
+        <div id="pageBody" class="bgColor">
+            <div id="downBlock" class="cover coverColor"></div>
+            <div id="leftBar" class="sideBar accentGray"></div>
+            <div id="bodyLockCont">
                 <div id="unlockBGMain" class="unlockBG">
-                    <div id="unlockBGLeft" class="unlockBG unlockMoveBG">
-                        <div id="unlockOutlineL" class="unlockOutline"></div>
-                    </div>
+                    <div id="unlockBGLeft" class="unlockBG unlockMoveBG accentBlue"></div>
                     <button id="unlockButton" onclick="unlock()">
-                        <p id="unlockText" class="mainText">Unlock</p>
+                        <p id="unlockText" class="mainText centeredText">Unlock</p>
                     </button>
-                    <div id="unlockBGRight" class="unlockBG unlockMoveBG">
-                        <div id="unlockOutlineR" class="unlockOutline"></div>
-                    </div>
+                    <div id="unlockBGRight" class="unlockBG unlockMoveBG accentBlue"></div>
                 </div>
             </div>
-            <div id="projectsCont">
-                <div id="projTitleBG">
-                    <p id="projTitleText">Current and Past Projects</p>
+            <div id="projectsCont" class="bgColor">
+                <div id="projTitleBG" class="accentGray">
+                    <p id="projTitleText" class="mainText centeredText">Current and Past Projects</p>
                 </div>
                 <div id="projBoxCont">
-                    <div class="projectBox">
-                        <p class="projectName">Vector-Two</p>
+                    <div class="projectBox accentGray">
+                        <p class="projectName mainText centeredText">Vector-Two</p>
                         <button class="projectButton">
-                            <p class="projButtonText">View</p>
+                            <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
-                    <div class="projectBox">
-                        <p class="projectName">Neural Network Nonsense</p>
+                    <div class="projectBox accentGray">
+                        <p class="projectName mainText centeredText">Neural Network Nonsense</p>
                         <button class="projectButton">
-                            <p class="projButtonText">View</p>
+                            <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
-                    <div class="projectBox">
-                        <p class="projectName">Sample Project</p>
+                    <div class="projectBox accentGray">
+                        <p class="projectName mainText centeredText">Immune Defender</p>
                         <button class="projectButton">
-                            <p class="projButtonText">View</p>
+                            <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
-                    <div class="projectBox">
-                        <p class="projectName">Sample Project</p>
+                    <div class="projectBox accentGray">
+                        <p class="projectName mainText centeredText">FIRST Robotics</p>
                         <button class="projectButton">
-                            <p class="projButtonText">View</p>
+                            <p class="projButtonText mainText centeredText">View</p>
+                        </button>
+                    </div>
+                    <div class="projectBox accentGray">
+                        <p class="projectName mainText centeredText">Chem-Helper</p>
+                        <button class="projectButton">
+                            <p class="projButtonText mainText centeredText">View</p>
+                        </button>
+                    </div>
+                    <div class="projectBox accentGray">
+                        <p class="projectName mainText centeredText">ConsoleSharp</p>
+                        <button class="projectButton">
+                            <p class="projButtonText mainText centeredText">View</p>
+                        </button>
+                    </div>
+                    <div class="projectBox accentGray">
+                        <p class="projectName mainText centeredText">Pong-Meister</p>
+                        <button class="projectButton">
+                            <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
                 </div>
             </div>
-            <div id="rightBar" class="sideBar">
-                <div id="srsOutline" class="outline sOutline"></div>
-            </div>
+            <div id="rightBar" class="sideBar accentGray"></div>
         </div>
         <script src="indexScript.js"></script>
     </body>

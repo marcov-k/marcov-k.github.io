@@ -15,6 +15,7 @@ const unlockButton = document.getElementById('unlockButton');
 const unlockBGMain = document.getElementById('unlockBGMain');
 const unlockBGLeft = document.getElementById('unlockBGLeft');
 const unlockBGRight = document.getElementById('unlockBGRight');
+const bodyLockCont = document.getElementById('bodyLockCont');
 
 const targetTitleScale = 0.5;
 const horizBlockEnd = 150;
@@ -26,9 +27,12 @@ const unlockBRot = '540deg';
 const unlockBGEnd = 100;
 
 async function windowLoad() {
-    body.style.overflowY = 'hidden';
+    if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+    scrollLock();
     await animateTitle();
-    body.style.overflowY = 'auto';
 }
 
 async function animateTitle() {
@@ -89,6 +93,7 @@ async function showSideBar() {
 async function unlock() {
     await launchButton();
     await openUnlock();
+    scrollUnlock();
 }
 
 async function launchButton() {
@@ -107,6 +112,17 @@ async function openUnlock() {
 
     unlockBGMain.style.width = 0;
     unlockBGMain.style.height = 0;
+    bodyLockCont.style.pointerEvents = 'none';
+}
+
+function scrollLock() {
+    window.onscroll = () => {
+        window.scrollTo(0, 0);
+    };
+}
+
+function scrollUnlock() {
+    window.onscroll = () => { };
 }
 
 function wait(ms) {
