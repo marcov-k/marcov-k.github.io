@@ -3,6 +3,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8" />
+        <!-- Stylesheet containing colors for all pages -->
+        <link rel="stylesheet" href="colors.css" />
         <link rel="stylesheet" href="indexStyles.css" />
         <title>Marco's Homepage</title>
     </head>
@@ -11,6 +13,7 @@
             <div id="tbtOutline" class="outline tOutline tbOutline outlineColor"></div>
             <div id="leftBlock" class="horizBlock cover coverColor"></div>
             <h1 id="titleText" class="mainText centeredText overlay">Marco Vasko-Klima</h1>
+            <a href="https://github.com/marcov-k" id="profileLink" class="link">GitHub Profile</a>
             <div id="rightBlock" class="horizBlock cover coverColor"></div>
             <div id="tbbOutline" class="outline tOutline tbOutline outlineColor"></div>
         </div>
@@ -33,43 +36,43 @@
                 <div id="projBoxCont">
                     <div class="projectBox accentGray">
                         <p class="projectName mainText centeredText">Vector-Two</p>
-                        <button class="projectButton">
+                        <button class="projectButton" onclick="loadProject('vec2')">
                             <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
                     <div class="projectBox accentGray">
                         <p class="projectName mainText centeredText">Neural Network Nonsense</p>
-                        <button class="projectButton">
+                        <button class="projectButton" onclick="loadProject('nnn')">
                             <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
                     <div class="projectBox accentGray">
                         <p class="projectName mainText centeredText">Immune Defender</p>
-                        <button class="projectButton">
+                        <button class="projectButton" onclick="loadProject('imdef')">
                             <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
                     <div class="projectBox accentGray">
                         <p class="projectName mainText centeredText">FIRST Robotics</p>
-                        <button class="projectButton">
+                        <button class="projectButton" onclick="loadProject('first')">
                             <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
                     <div class="projectBox accentGray">
                         <p class="projectName mainText centeredText">Chem-Helper</p>
-                        <button class="projectButton">
+                        <button class="projectButton" onclick="loadProject('ch')">
                             <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
                     <div class="projectBox accentGray">
                         <p class="projectName mainText centeredText">ConsoleSharp</p>
-                        <button class="projectButton">
+                        <button class="projectButton" onclick="loadProject('cs')">
                             <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>
                     <div class="projectBox accentGray">
                         <p class="projectName mainText centeredText">Pong-Meister</p>
-                        <button class="projectButton">
+                        <button class="projectButton" onclick="loadProject('pm')">
                             <p class="projButtonText mainText centeredText">View</p>
                         </button>
                     </div>

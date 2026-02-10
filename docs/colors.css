@@ -1,0 +1,35 @@
+﻿:root {
+    --cover-color: rgb(3, 4, 29);
+    --text-color: rgb(227, 223, 205);
+    --link-color: rgb(230, 222, 5);
+    --outline-color: rgb(209, 119, 2);
+    --bg-color: rgb(10, 13, 69);
+    --accent-blue: rgb(3, 7, 99);
+    --accent-gray: rgb(34, 41, 51);
+    --outline-accent-color: black;
+}
+
+/* Background color classes */
+.coverColor {
+    background-color: var(--cover-color);
+}
+
+.outlineColor {
+    background-color: var(--outline-color);
+}
+
+.accentBlue {
+    background-color: var(--accent-blue);
+}
+
+.bgColor {
+    background-color: var(--bg-color);
+}
+
+.accentGray {
+    background-color: var(--accent-gray);
+}
+
+.outlineAccentColor {
+    background-color: var(--outline-accent-color);
+}

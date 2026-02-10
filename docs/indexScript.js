@@ -125,6 +125,25 @@ function scrollUnlock() {
     window.onscroll = () => { };
 }
 
+async function loadProject(projName) {
+    switch (projName) {
+        case 'vec2':
+            break;
+        case 'nnn':
+            break;
+        case 'imdef':
+            break;
+        case 'first':
+            break;
+        case 'ch':
+            break;
+        case 'cs':
+            break;
+        case 'pm':
+            break;
+    }
+}
+
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
