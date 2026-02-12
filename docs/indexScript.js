@@ -1,6 +1,7 @@
 const body = document.body;
 
 const titleText = document.getElementById('titleText');
+const profileLink = document.getElementById('profileLink');
 
 const leftBlock = document.getElementById('leftBlock');
 const rightBlock = document.getElementById('rightBlock');
@@ -47,6 +48,7 @@ async function animateTitle() {
 
 function enlargeTitle() {
     titleText.style.transform = `scale(${targetTitleScale})`;
+    profileLink.style.transform = `scale(1)`;
 }
 
 async function moveSideBlocks() {
