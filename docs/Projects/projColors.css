@@ -1,0 +1,155 @@
+﻿:root {
+    --vec2-primary: rgb();
+    --vec2-faded: rgb();
+    --vec2-bright: rgb();
+    --vec2-dark: rgb();
+    --vec2-light: rgb();
+
+    --nnn-primary: rgb();
+    --nnn-faded: rgb();
+    --nnn-bright: rgb();
+    --nnn-dark: rgb();
+    --nnn-light: rgb();
+
+    --imdef-primary: rgb();
+    --imdef-faded: rgb();
+    --imdef-bright: rgb();
+    --imdef-dark: rgb();
+    --imdef-light: rgb();
+
+    --first-primary: rgb();
+    --first-faded: rgb();
+    --first-bright: rgb();
+    --first-dark: rgb();
+    --first-light: rgb();
+
+    --ch-primary: rgb();
+    --ch-faded: rgb();
+    --ch-bright: rgb();
+    --ch-dark: rgb();
+    --ch-light: rgb();
+
+    --cs-primary: rgb();
+    --cs-faded: rgb();
+    --cs-bright: rgb();
+    --cs-dark: rgb();
+    --cs-light: rgb();
+
+    --pm-primary: rgb();
+    --pm-faded: rgb();
+    --pm-bright: rgb();
+    --pm-dark: rgb();
+    --pm-light: rgb();
+}
+
+.vec2Primary {
+    background-color: var(--vec2-primary);
+}
+.vec2Faded {
+    background-color: var(--vec2-faded);
+}
+.vec2Bright {
+    background-color: var(--vec2-bright);
+}
+.vec2Dark {
+    background-color: var(--vec2-dark);
+}
+.vec2Light {
+    background-color: var(--vec2-light);
+}
+
+.nnnPrimary {
+    background-color: var(--nnn-primary);
+}
+.nnnFaded {
+    background-color: var(--nnn-faded);
+}
+.nnnBright {
+    background-color: var(--nnn-bright);
+}
+.nnnDark {
+    background-color: var(--nnn-dark);
+}
+.nnnLight {
+    background-color: var(--nnn-light);
+}
+
+.imdefPrimary {
+    background-color: var(--imdef-primary);
+}
+.imdefFaded {
+    background-color: var(--imdef-faded);
+}
+.imdefBright {
+    background-color: var(--imdef-bright);
+}
+.imdefDark {
+    background-color: var(--imdef-dark);
+}
+.imdefLight {
+    background-color: var(--imdef-light);
+}
+
+.firstPrimary {
+    background-color: var(--first-primary);
+}
+.firstFaded {
+    background-color: var(--first-faded);
+}
+.firstBright {
+    background-color: var(--first-bright);
+}
+.firstDark {
+    background-color: var(--first-dark);
+}
+.firstLight {
+    background-color: var(--first-light);
+}
+
+.chPrimary {
+    background-color: var(--ch-primary);
+}
+.chFaded {
+    background-color: var(--ch-faded);
+}
+.chBright {
+    background-color: var(--ch-bright);
+}
+.chDark {
+    background-color: var(--ch-dark);
+}
+.chLight {
+    background-color: var(--ch-light);
+}
+
+.csPrimary {
+    background-color: var(--cs-primary);
+}
+.csFaded {
+    background-color: var(--cs-faded);
+}
+.csBright {
+    background-color: var(--cs-bright);
+}
+.csDark {
+    background-color: var(--cs-dark);
+}
+.csLight {
+    background-color: var(--cs-light);
+}
+
+.pmPrimary {
+    background-color: var(--pm-primary);
+}
+.pmFaded {
+    background-color: var(--pm-faded);
+}
+.pmBright {
+    background-color: var(--pm-bright);
+}
+.pmDark {
+    background-color: var(--pm-dark);
+}
+.pmLight {
+    background-color: var(--pm-light);
+}
