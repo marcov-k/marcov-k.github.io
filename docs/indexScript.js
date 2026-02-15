@@ -1,4 +1,8 @@
 const body = document.body;
+const root = document.documentElement;
+const rootStyle = getComputedStyle(root);
+
+const lerp = (x, y, a) => x * (1 - a) + y * a;
 
 const titleText = document.getElementById('titleText');
 const profileLink = document.getElementById('profileLink');
@@ -18,6 +22,13 @@ const unlockBGLeft = document.getElementById('unlockBGLeft');
 const unlockBGRight = document.getElementById('unlockBGRight');
 const bodyLockCont = document.getElementById('bodyLockCont');
 
+const loadingCover = document.getElementById('loadingCover');
+
+const projColors = [rootStyle.getPropertyValue('--vec2-primary'), rootStyle.getPropertyValue('--vec2-light'), rootStyle.getPropertyValue('--nnn-primary'),
+    rootStyle.getPropertyValue('--nnn-light'), rootStyle.getPropertyValue('--imdef-primary'), rootStyle.getPropertyValue('--imdef-light'), rootStyle.getPropertyValue('--first-primary'),
+    rootStyle.getPropertyValue('--first-light'), rootStyle.getPropertyValue('--ch-primary'), rootStyle.getPropertyValue('--ch-light'), rootStyle.getPropertyValue('--cs-primary'),
+    rootStyle.getPropertyValue('--cs-light'), rootStyle.getPropertyValue('--pm-primary'), rootStyle.getPropertyValue('--pm-light')];
+
 const targetTitleScale = 0.5;
 const horizBlockEnd = 150;
 const downBlockEnd = 100;
@@ -26,6 +37,8 @@ const animTime = 1000;
 const unlockBEnd = '-50vh';
 const unlockBRot = '540deg';
 const unlockBGEnd = 100;
+const coverTime = 1000;
+const coverOutlineWidth = 100;
 
 async function windowLoad() {
     if (history.scrollRestoration) {
@@ -128,21 +141,53 @@ function scrollUnlock() {
 }
 
 async function loadProject(projName) {
+    let bgColor;
+    let outlineColor;
     switch (projName) {
         case 'vec2':
+            bgColor = projColors[0];
+            outlineColor = projColors[1];
             break;
         case 'nnn':
+            bgColor = projColors[2];
+            outlineColor = projColors[3];
             break;
         case 'imdef':
+            bgColor = projColors[4];
+            outlineColor = projColors[5];
             break;
         case 'first':
+            bgColor = projColors[6];
+            outlineColor = projColors[7];
             break;
         case 'ch':
+            bgColor = projColors[8];
+            outlineColor = projColors[9];
             break;
         case 'cs':
+            bgColor = projColors[10];
+            outlineColor = projColors[11];
             break;
         case 'pm':
+            bgColor = projColors[12];
+            outlineColor = projColors[13];
             break;
+    }
+    await loadCover(bgColor, outlineColor);
+}
+
+async function loadCover(bgColor, outlineColor) {
+    loadingCover.style.backgroundColor = bgColor;
+    loadingCover.style.outlineColor = outlineColor;
+
+    let time = 0;
+    let timeStep = 10;
+    loadingCover.style.transform = `scale(1)`;
+    while (time < coverTime) {
+        loadingCover.style.outlineWidth = lerp(0, coverOutlineWidth, time / coverTime) + 'vw';
+
+        time += timeStep;
+        await wait(timeStep);
     }
 }
 
