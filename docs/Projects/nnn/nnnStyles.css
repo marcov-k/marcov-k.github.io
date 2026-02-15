@@ -1,0 +1,27 @@
+﻿.primary {
+    background-color: var(--nnn-primary);
+}
+.faded {
+    background-color: var(--nnn-faded);
+}
+.bright {
+    background-color: var(--nnn-bright);
+}
+.dark {
+    background-color: var(--nnn-dark);
+}
+.light {
+    background-color: var(--nnn-light);
+}
+#topBar {
+    border-top-color: var(--nnn-dark);
+    border-bottom-color: var(--nnn-light);
+}
+.sideBar {
+    border-color: var(--nnn-dark);
+    outline-color: var(--nnn-light);
+}
+#loadingCover {
+    background-color: var(--nnn-primary);
+    outline-color: var(--nnn-light);
+}

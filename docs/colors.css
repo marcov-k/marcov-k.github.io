@@ -33,3 +33,14 @@
 .outlineAccentColor {
     background-color: var(--outline-accent-color);
 }
+
+button {
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+.centeredText {
+    text-align: center;
+    transform-origin: center;
+}

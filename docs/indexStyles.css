@@ -4,10 +4,6 @@
 }
 .mainText {
     color: var(--text-color);
-    transform-origin: center;
-}
-.centeredText {
-    text-align: center;
 }
 .outline {
     position: absolute;
@@ -21,11 +17,6 @@
     color: var(--link-color);
     font-size: 1.5vw;
     text-align: center;
-}
-button {
-    box-shadow: none;
-    border: none;
-    cursor: pointer;
 }
 div {
     transform-origin: center;

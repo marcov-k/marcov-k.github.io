@@ -1,0 +1,27 @@
+﻿.primary {
+    background-color: var(--vec2-primary);
+}
+.faded {
+    background-color: var(--vec2-faded);
+}
+.bright {
+    background-color: var(--vec2-bright);
+}
+.dark {
+    background-color: var(--vec2-dark);
+}
+.light {
+    background-color: var(--vec2-light);
+}
+#topBar {
+    border-top-color: var(--vec2-dark);
+    border-bottom-color: var(--vec2-light);
+}
+.sideBar {
+    border-color: var(--vec2-dark);
+    outline-color: var(--vec2-light);
+}
+#loadingCover {
+    background-color: var(--vec2-primary);
+    outline-color: var(--vec2-light);
+}

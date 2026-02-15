@@ -143,6 +143,7 @@ function scrollUnlock() {
 async function loadProject(projName) {
     let bgColor;
     let outlineColor;
+    let href = "Projects/" + projName + "/" + projName + ".html";
     switch (projName) {
         case 'vec2':
             bgColor = projColors[0];
@@ -174,6 +175,7 @@ async function loadProject(projName) {
             break;
     }
     await loadCover(bgColor, outlineColor);
+    window.location.href = href;
 }
 
 async function loadCover(bgColor, outlineColor) {
