@@ -99,6 +99,8 @@ html, body {
 /* Page edges */
 .sideBar {
     display: flex;
+    justify-content: center;
+    align-content: center;
     position: absolute;
     width: 20%;
     height: 100%;
@@ -107,6 +109,28 @@ html, body {
     border-color: var(--outline-color);
     border-style: solid;
     border-width: 0;
+}
+.infoTextCont {
+    display: flex;
+    flex-direction: column;
+}
+.infoLabel {
+    font-size: 1.5vw;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.infoText {
+    font-size: 1vw;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+#storyTextCont {
+    padding-left: 1.5vw;
+    padding-right: 0.5vw;
+}
+#codeTextCont {
+    padding-right: 1.5vw;
+    padding-left: 0.5vw;
 }
 #leftBar {
     transform: translateX(-300%);

@@ -22,6 +22,8 @@ const unlockBGLeft = document.getElementById('unlockBGLeft');
 const unlockBGRight = document.getElementById('unlockBGRight');
 const bodyLockCont = document.getElementById('bodyLockCont');
 
+const infoTexts = Array.from(document.querySelectorAll('.infoLabel')).concat(Array.from(document.querySelectorAll('.infoText')));
+
 const loadingCover = document.getElementById('loadingCover');
 
 const projColors = [rootStyle.getPropertyValue('--vec2-primary'), rootStyle.getPropertyValue('--vec2-light'), rootStyle.getPropertyValue('--nnn-primary'),
@@ -107,7 +109,8 @@ async function showSideBar() {
 
 async function unlock() {
     await launchButton();
-    await openUnlock();
+    openUnlock();
+    await showInfoText();
     scrollUnlock();
 }
 
@@ -128,6 +131,15 @@ async function openUnlock() {
     unlockBGMain.style.width = 0;
     unlockBGMain.style.height = 0;
     bodyLockCont.style.pointerEvents = 'none';
+}
+
+async function showInfoText() {
+    console.log(infoTexts);
+    infoTexts.forEach(text => {
+        text.style.opacity = '1';
+        console.log(text.style.opacity);
+    });
+    await wait(animTime * 0.5);
 }
 
 function scrollLock() {
