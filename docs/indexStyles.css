@@ -125,12 +125,12 @@ html, body {
     transition: opacity 0.5s ease-out;
 }
 #storyTextCont {
-    padding-left: 1.5vw;
-    padding-right: 0.5vw;
+    padding-left: 2.0vw;
+    padding-right: 1.0vw;
 }
 #codeTextCont {
-    padding-right: 1.5vw;
-    padding-left: 0.5vw;
+    padding-right: 2.0vw;
+    padding-left: 1.0vw;
 }
 #leftBar {
     transform: translateX(-300%);
