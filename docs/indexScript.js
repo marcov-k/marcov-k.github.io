@@ -156,6 +156,7 @@ async function loadProject(projName) {
     let bgColor;
     let outlineColor;
     let href = "Projects/" + projName + "/" + projName + ".html";
+    let anim = true;
     switch (projName) {
         case 'vec2':
             bgColor = projColors[0];
@@ -185,8 +186,15 @@ async function loadProject(projName) {
             bgColor = projColors[12];
             outlineColor = projColors[13];
             break;
+        case 'unc':
+            href = "UncertaintySolver/index.html"
+            anim = false;
+            break;
+        default:
+            anim = false;
+            break;
     }
-    await loadCover(bgColor, outlineColor);
+    if (anim) await loadCover(bgColor, outlineColor);
     window.location.href = href;
 }
 
