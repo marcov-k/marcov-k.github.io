@@ -57,7 +57,7 @@
     margin: 0;
 }
 .factText {
-    font-size: 1vw;
+    font-size: 1.25vw;
     margin: 0;
 }
 #leftBar {
@@ -81,7 +81,7 @@
     align-items: center;
     position: relative;
     margin-top: 1vh;
-    margin-bottom: 3vh;
+    margin-bottom: 25vh;
     width: 70%;
 }
 .infoTitle {
@@ -91,7 +91,7 @@
     margin: 0;
 }
 .infoText {
-    font-size: 1vw;
+    font-size: 1.25vw;
     margin: 0;
     width: 100%;
 }

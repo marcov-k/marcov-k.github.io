@@ -28,6 +28,7 @@ function skipCover() {
     loadingCover.style.transition = `transform 0s ease-out`;
     loadingCover.style.transform = `scale(0)`;
     loadingCover.style.outlineWidth = '0vw';
+    scrollUnlock();
 }
 
 async function coverUnload() {
