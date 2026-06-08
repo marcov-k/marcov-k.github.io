@@ -24,6 +24,12 @@ async function coverLoad() {
     loadingCover.style.outlineWidth = '0vw';
 }
 
+function skipCover() {
+    loadingCover.style.transition = `transform 0s ease-out`;
+    loadingCover.style.transform = `scale(0)`;
+    loadingCover.style.outlineWidth = '0vw';
+}
+
 async function coverUnload() {
     let time = 0
     loadingCover.style.transition = `transform 1s ease-in`;
@@ -56,3 +62,15 @@ function wait(ms) {
 }
 
 window.onload = windowLoad;
+
+window.addEventListener('pageshow', (event) => {
+    let navEntry = performance.getEntriesByType('navigation')[0];
+    let isReload = navEntry && navEntry.type === 'reload';
+
+    if (event.persisted || isReload) {
+        skipCover();
+    }
+    else {
+        windowLoad();
+    }
+})

@@ -42,6 +42,16 @@ const unlockBGEnd = 100;
 const coverTime = 1000;
 const coverOutlineWidth = 100;
 
+const transformTrans1000ms = `transform 1s ease`;
+const transformTrans660ms = `transform 0.66s ease`;
+const infoTrans = `opacity 0.5s ease-out`;
+const transformTrans500ms = `transform 0.5s ease-in`;
+const transformTrans400ms = `transform 0.4s ease-in`;
+const transformTrans1000msIn = `transform 1s ease-in`;
+const transformTrans1000msOut = `transform 1s ease-out`;
+const transformTrans0ms = `transform 0s ease`;
+const infoTrans0ms = `opacity 0s ease`;
+
 async function windowLoad() {
     if (history.scrollRestoration) {
         history.scrollRestoration = 'manual';
@@ -62,6 +72,8 @@ async function animateTitle() {
 }
 
 function enlargeTitle() {
+    titleText.style.transition = transformTrans1000ms;
+    profileLink.style.transition = transformTrans1000ms;
     titleText.style.transform = `scale(${targetTitleScale})`;
     profileLink.style.transform = `scale(1)`;
 }
@@ -70,6 +82,8 @@ async function moveSideBlocks() {
     let leftPos = -horizBlockEnd + '%';
     let rightPos = horizBlockEnd + '%';
 
+    leftBlock.style.transition = transformTrans1000ms;
+    rightBlock.style.transition = transformTrans1000ms;
     leftBlock.style.transform = `translateX(${leftPos})`;
     rightBlock.style.transform = `translateX(${rightPos})`;
 
@@ -82,6 +96,7 @@ async function moveSideBlocks() {
 async function moveBottomBlock() {
     let downPos = downBlockEnd + '%';
 
+    downBlock.style.transition = transformTrans1000ms;
     downBlock.style.transform = `translateY(${downPos})`;
 
     await wait(animTime);
@@ -91,6 +106,7 @@ async function moveBottomBlock() {
 
 async function showTopOutline() {
     topBarOutlines.forEach(outline => {
+        outline.style.transition = transformTrans660ms;
         outline.style.transform = `translateY(${0}%)`;
     });
 
@@ -101,6 +117,8 @@ async function showSideBar() {
     let leftPos = -sideBarEnd + '%';
     let rightPos = sideBarEnd + '%';
 
+    leftBar.style.transition = transformTrans1000ms;
+    rightBar.style.transition = transformTrans1000ms;
     leftBar.style.transform = `translateX(${leftPos})`;
     rightBar.style.transform = `translateX(${rightPos})`;
 
@@ -115,6 +133,7 @@ async function unlock() {
 }
 
 async function launchButton() {
+    unlockButton.style.transition = transformTrans400ms;
     unlockButton.style.transform = `translateY(${unlockBEnd}) rotate(${unlockBRot})`;
     await wait(animTime * 0.3);
 }
@@ -123,21 +142,23 @@ async function openUnlock() {
     let leftPos = -unlockBGEnd + '%';
     let rightPos = unlockBGEnd + '%';
 
+    unlockBGLeft.style.transition = transformTrans500ms;
+    unlockBGRight.style.transition = transformTrans500ms;
     unlockBGLeft.style.transform = `translateX(${leftPos})`;
     unlockBGRight.style.transform = `translateX(${rightPos})`;
 
     await wait(animTime * 0.5);
 
+    unlockBGMain.style.transition = transformTrans500ms;
     unlockBGMain.style.width = 0;
     unlockBGMain.style.height = 0;
     bodyLockCont.style.pointerEvents = 'none';
 }
 
 async function showInfoText() {
-    console.log(infoTexts);
     infoTexts.forEach(text => {
+        text.style.transition = infoTrans;
         text.style.opacity = '1';
-        console.log(text.style.opacity);
     });
     await wait(animTime * 0.5);
 }
@@ -153,48 +174,14 @@ function scrollUnlock() {
 }
 
 async function loadProject(projName) {
-    let bgColor;
-    let outlineColor;
+    sessionStorage.setItem('lastProject', projName);
+
     let href = "Projects/" + projName + "/" + projName + ".html";
-    let anim = true;
-    switch (projName) {
-        case 'vec2':
-            bgColor = projColors[0];
-            outlineColor = projColors[1];
-            break;
-        case 'nnn':
-            bgColor = projColors[2];
-            outlineColor = projColors[3];
-            break;
-        case 'imdef':
-            bgColor = projColors[4];
-            outlineColor = projColors[5];
-            break;
-        case 'first':
-            bgColor = projColors[6];
-            outlineColor = projColors[7];
-            break;
-        case 'ch':
-            bgColor = projColors[8];
-            outlineColor = projColors[9];
-            break;
-        case 'cs':
-            bgColor = projColors[10];
-            outlineColor = projColors[11];
-            break;
-        case 'pm':
-            bgColor = projColors[12];
-            outlineColor = projColors[13];
-            break;
-        case 'unc':
-            href = "UncertaintySolver/index.html";
-            anim = false;
-            break;
-        default:
-            anim = false;
-            break;
-    }
-    if (anim) await loadCover(bgColor, outlineColor);
+    let colors = getProjColors(projName);
+
+    if (colors) await loadCover(colors[0], colors[1]);
+    else if (projName == 'unc') href = "UncertaintySolver/index.html";
+
     window.location.href = href;
 }
 
@@ -204,6 +191,7 @@ async function loadCover(bgColor, outlineColor) {
 
     let time = 0;
     let timeStep = 10;
+    loadingCover.style.transition = transformTrans1000msIn;
     loadingCover.style.transform = `scale(1)`;
     while (time < coverTime) {
         loadingCover.style.outlineWidth = lerp(0, coverOutlineWidth, time / coverTime) + 'vw';
@@ -213,8 +201,132 @@ async function loadCover(bgColor, outlineColor) {
     }
 }
 
+async function unloadCover(bgColor, outlineColor) {
+    loadingCover.style.transition = transformTrans0ms;
+    loadingCover.style.transform = `scale(1)`;
+    loadingCover.style.outlineWidth = coverOutlineWidth;
+    loadingCover.style.backgroundColor = bgColor;
+    loadingCover.style.outlineColor = outlineColor;
+
+    await wait(50);
+
+    let time = 0;
+    let timeStep = 10;
+    loadingCover.style.transition = transformTrans1000msOut;
+    loadingCover.style.transform = `scale(0)`;
+    while (time < coverTime) {
+        loadingCover.style.outlineWidth = lerp(coverOutlineWidth, 0, time / coverTime) + 'vw';
+
+        time += timeStep;
+        await wait(timeStep);
+    }
+    loadingCover.style.outlineWidth = '0vw';
+}
+
+function skipUnloadCover() {
+    loadingCover.style.outlineWidth = 0;
+    loadingCover.style.transition = transformTrans0ms;
+    loadingCover.style.transform = `scale(0)`;
+}
+
+function skipLoad() {
+    titleText.style.transition = transformTrans0ms;
+    profileLink.style.transition = transformTrans0ms;
+    titleText.style.transform = `scale(${targetTitleScale})`;
+    profileLink.style.transform = `scale(1)`;
+
+    let leftPos = -horizBlockEnd + '%';
+    let rightPos = horizBlockEnd + '%';
+
+    leftBlock.style.transition = transformTrans0ms;
+    rightBlock.style.transition = transformTrans0ms;
+    leftBlock.style.transform = `translateX(${leftPos})`;
+    rightBlock.style.transform = `translateX(${rightPos})`;
+    leftBlock.style.width = 0;
+    rightBlock.style.width = 0;
+
+    let downPos = downBlockEnd + '%';
+
+    downBlock.style.transition = transformTrans0ms;
+    downBlock.style.transform = `translateY(${downPos})`;
+    downBlock.style.height = 0;
+
+    topBarOutlines.forEach(outline => {
+        outline.style.transition = transformTrans0ms;
+        outline.style.transform = `translateY(${0}%)`;
+    });
+
+    leftPos = -sideBarEnd + '%';
+    rightPos = sideBarEnd + '%';
+
+    leftBar.style.transition = transformTrans0ms;
+    rightBar.style.transition = transformTrans0ms;
+    leftBar.style.transform = `translateX(${leftPos})`;
+    rightBar.style.transform = `translateX(${rightPos})`;
+
+    unlockButton.style.transition = transformTrans0ms;
+    unlockButton.style.transform = `translateY(${unlockBEnd}) rotate(${unlockBRot})`;
+
+    leftPos = -unlockBGEnd + '%';
+    rightPos = unlockBGEnd + '%';
+
+    unlockBGLeft.style.transition = transformTrans0ms;
+    unlockBGRight.style.transition = transformTrans0ms;
+    unlockBGLeft.style.transform = `translateX(${leftPos})`;
+    unlockBGRight.style.transform = `translateX(${rightPos})`;
+
+    unlockBGMain.style.transition = transformTrans0ms;
+    unlockBGMain.style.width = 0;
+    unlockBGMain.style.height = 0;
+    bodyLockCont.style.pointerEvents = 'none';
+
+    infoTexts.forEach(text => {
+        text.style.transition = infoTrans0ms;
+        text.style.opacity = '1';
+    });
+
+    scrollUnlock();
+}
+
+function getProjColors(projName) {
+    switch (projName) {
+        case 'vec2': return [projColors[0], projColors[1]];
+        case 'nnn': return [projColors[2], projColors[3]];
+        case 'imdef': return [projColors[4], projColors[5]];
+        case 'first': return [projColors[6], projColors[7]];
+        case 'ch': return [projColors[8], projColors[9]];
+        case 'cs': return [projColors[10], projColors[11]];
+        case 'pm': return [projColors[12], projColors[13]];
+        default: return null;
+    }
+}
+
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-window.onload = windowLoad;
+window.addEventListener('pageshow', (event) => {
+    let navEntry = performance.getEntriesByType('navigation')[0];
+    let isReload = navEntry && navEntry.type === 'reload';
+
+    if (event.persisted || sessionStorage.getItem('visited')) {
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+
+        skipLoad();
+
+        let lastProj = sessionStorage.getItem('lastProject');
+        let colors = getProjColors(lastProj);
+        if (!event.persisted && !isReload && colors) {
+            unloadCover(colors[0], colors[1]);
+        }
+        else {
+            skipUnloadCover();
+        }
+    }
+    else {
+        sessionStorage.setItem('visited', true);
+        windowLoad();
+    }
+});
