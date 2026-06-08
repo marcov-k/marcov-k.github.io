@@ -40,6 +40,11 @@
     z-index: 5;
 }
 .sideTextCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5vh;
+    align-items: center;
     position: absolute;
     top: 20vh;
     margin-left: 1vw;
@@ -49,9 +54,11 @@
     font-size: 2vw;
     text-decoration: underline;
     text-decoration-thickness: 0.4vh;
+    margin: 0;
 }
 .factText {
     font-size: 1vw;
+    margin: 0;
 }
 #leftBar {
     left: 0;
@@ -89,7 +96,7 @@
     width: 100%;
 }
 .projImg {
-    max-width: 70%;
+    width: 70%;
     height: auto;
     margin: 2vh;
     border: 0.75vw solid;

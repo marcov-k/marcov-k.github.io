@@ -24,6 +24,12 @@
 .projImg {
     border-color: var(--ch-dark);
 }
+.sideText {
+    color: black;
+}
+.mainText {
+    color: black;
+}
 #loadingCover {
     background-color: var(--ch-primary);
     outline-color: var(--ch-light);

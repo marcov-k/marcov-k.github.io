@@ -24,6 +24,15 @@
 .projImg {
     border-color: var(--vec2-dark);
 }
+.sideText {
+    color: white;
+}
+.mainText {
+    color: black;
+}
+#nameText {
+    color: white;
+}
 #loadingCover {
     background-color: var(--vec2-primary);
     outline-color: var(--vec2-light);
