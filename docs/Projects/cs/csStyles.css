@@ -30,6 +30,9 @@
 .mainText {
     color: white;
 }
+#repoLink {
+    color: black;
+}
 #loadingCover {
     background-color: var(--cs-primary);
     outline-color: var(--cs-light);

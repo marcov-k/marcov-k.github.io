@@ -33,6 +33,9 @@
 #nameText {
     color: white;
 }
+#repoLink {
+    color: white;
+}
 #loadingCover {
     background-color: var(--first-primary);
     outline-color: var(--first-light);
