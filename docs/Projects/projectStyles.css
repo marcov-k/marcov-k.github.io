@@ -39,15 +39,60 @@
     outline: 0.5vw solid;
     z-index: 5;
 }
+.sideTextCont {
+    position: absolute;
+    top: 20vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.factTitle {
+    font-size: 2vw;
+    text-decoration: underline;
+    text-decoration-thickness: 0.4vh;
+}
+.factText {
+    font-size: 1vw;
+}
 #leftBar {
     left: 0;
     border-left-width: 0.5vw;
 }
 #body {
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     width: 60%;
     min-height: 80vh;
     margin-top: 20vh;
+}
+.overviewCont {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    width: 70%;
+}
+.infoTitle {
+    font-size: 2vw;
+    text-decoration: underline;
+    text-decoration-thickness: 0.4vh;
+    margin: 0;
+}
+.infoText {
+    font-size: 1vw;
+    margin: 0;
+    width: 100%;
+}
+.projImg {
+    max-width: 70%;
+    height: auto;
+    margin: 2vh;
+    border: 0.75vw solid;
 }
 #rightBar {
     right: 0;

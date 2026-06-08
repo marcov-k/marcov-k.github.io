@@ -21,6 +21,9 @@
     border-color: var(--vec2-dark);
     outline-color: var(--vec2-light);
 }
+.projImg {
+    border-color: var(--vec2-dark);
+}
 #loadingCover {
     background-color: var(--vec2-primary);
     outline-color: var(--vec2-light);

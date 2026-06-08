@@ -187,7 +187,7 @@ async function loadProject(projName) {
             outlineColor = projColors[13];
             break;
         case 'unc':
-            href = "UncertaintySolver/index.html"
+            href = "UncertaintySolver/index.html";
             anim = false;
             break;
         default:

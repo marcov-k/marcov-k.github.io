@@ -21,6 +21,9 @@
     border-color: var(--pm-dark);
     outline-color: var(--pm-light);
 }
+.projImg {
+    border-color: var(--pm-dark);
+}
 #loadingCover {
     background-color: var(--pm-primary);
     outline-color: var(--pm-light);
