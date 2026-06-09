@@ -5,7 +5,7 @@ const coverTime = 1000;
 const animTimeStep = 10;
 const coverOutlineWidth = 100;
 
-async function windowLoad() {
+async function loadWindow() {
     scrollLock();
     await coverLoad();
     scrollUnlock();
@@ -62,8 +62,6 @@ function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-window.onload = windowLoad;
-
 window.addEventListener('pageshow', (event) => {
     let navEntry = performance.getEntriesByType('navigation')[0];
     let isReload = navEntry && navEntry.type === 'reload';
@@ -72,6 +70,6 @@ window.addEventListener('pageshow', (event) => {
         skipCover();
     }
     else {
-        windowLoad();
+        loadWindow();
     }
 })

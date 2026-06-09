@@ -22,32 +22,63 @@
                 </button>
                 <div class="sideTextCont">
                     <p class="centeredText factTitle sideText">Fun Fact</p>
-                    <p class="centeredText factText sideText">Placeholder placeholder placeholder placeholder</p>
+                    <p class="centeredText factText sideText">
+                        The project has gone through two complete refactors and one major refactor: 
+                        switching from the original basic backpropagation system to number-based 
+                        autograd-style automatic differentiation, replacing individual numbers with 
+                        tensors as the base nodes in the autograd graph, and restructuring all of 
+                        the internal tensor logic to eliminate unnecessary memory allocations 
+                        and incorporate vectorization/parallelization.
+                    </p>
                 </div>
             </div>
             <div id="body" class="primary">
                 <div class="overviewCont">
                     <p class="centeredText infoTitle mainText">Overview</p>
                     <p class="centeredText infoText mainText">
-                        Placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder
+                        Originally started as a codebase for experimenting with small custom neural networks, 
+                        Neural Network Nonsense has evolved into being a full-scale neural network library. 
+                        The project strictly does not use any external libraries, relying solely on the C#
+                        standard library and from-scratch implementations. The architecture is based on the PyTorch
+                        autograd system to support advanced neural network operations in real-time via automatic 
+                        differentiation. I have recently succeeded in using the library to train neural networks 
+                        to play Tic-Tac-Toe and Snake relatively well. As of now, my future plans include adding 
+                        support for convolutional neural networks and proximal policy optimization (PPO) training.
                     </p>
                     <img src="nnnimg1.gif" class="projImg" />
                     <img src="nnnimg2.gif" class="projImg" />
                     <p class="centeredText infoText mainText">
-                        Placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder
+                        The most advanced capabilities of the current Neural Network Nonsense version include 
+                        using Deep Q-Network (DQN) training to train agents to operate in environments with 
+                        discrete action spaces. The library provides a standard environment class and API which 
+                        can be extended to train neural networks in nearly any discrete environment. I have 
+                        also implemented a basic file system which allows for trained neural networks to be 
+                        saved to and loaded from simple JSON files. Neural Network Nonsense also includes 
+                        a significant amount of standard neural network and training functions, such as a 
+                        variety of activation functions (hyperbolic tangent, rectified linear unit, etc.) 
+                        and multiple cost functions (mean squared error, pseudo-huber loss, etc.). The size of 
+                        the neural network required to effectively play... Tic-Tac-Toe... was too large for the 
+                        original number-based autograd implementation to handle at any reasonable speed, prompting 
+                        me to rewrite the system to operate at the tensor level. After achieving a proof of concept 
+                        and seeing the performance increase from the tensor system, I also decided to restructure the 
+                        internal tensor logic to use as few memory allocations as possible and leverage C#'s Single 
+                        Instruction, Multiple Data (SIMD) vectorization along with parallelization via CPU multithreading 
+                        to improve the performance even further. As a result, Neural Network Nonsense has become 
+                        my most advanced and long-running project.
                     </p>
                 </div>
             </div>
             <div id="rightBar" class="sideBar faded">
                 <div class="sideTextCont">
                     <p class="centeredText factTitle sideText">Fun Fact</p>
-                    <p class="centeredText factText sideText">Placeholder placeholder placeholder placeholder</p>
+                    <p class="centeredText factText sideText">
+                        For the sake of completeness, the library includes a number of operations 
+                        and their respective derivative formulas which are very unlikely to ever 
+                        be used in the context of neural networks. This includes a logarithm 
+                        implementation which accepts a tensor as both its argument and base, 
+                        along with the partial derivative equations in respect to both the 
+                        argument and base.
+                    </p>
                 </div>
             </div>
         </div>

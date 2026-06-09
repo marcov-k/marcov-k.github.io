@@ -52,7 +52,7 @@ const transformTrans1000msOut = `transform 1s ease-out`;
 const transformTrans0ms = `transform 0s ease`;
 const infoTrans0ms = `opacity 0s ease`;
 
-async function windowLoad() {
+async function loadWindow() {
     if (history.scrollRestoration) {
         history.scrollRestoration = 'manual';
     }
@@ -327,6 +327,6 @@ window.addEventListener('pageshow', (event) => {
     }
     else {
         sessionStorage.setItem('visited', true);
-        windowLoad();
+        loadWindow();
     }
 });
