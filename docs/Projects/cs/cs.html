@@ -22,32 +22,46 @@
                 </button>
                 <div class="sideTextCont">
                     <p class="centeredText factTitle sideText">Fun Fact</p>
-                    <p class="centeredText factText sideText">Placeholder placeholder placeholder placeholder</p>
+                    <p class="centeredText factText sideText">
+                        Includes its own custom embedded syntax for string styling which is parsed and interpreted 
+                        via a regex.
+                    </p>
                 </div>
             </div>
             <div id="body" class="primary">
                 <div class="overviewCont">
                     <p class="centeredText infoTitle mainText">Overview</p>
                     <p class="centeredText infoText mainText">
-                        Placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder
+                        Being tired of the very limited styling options available in the default C# console, I 
+                        decided to experiment with my own basic console application. ConsoleSharp functions as 
+                        a miniature desktop application framework with support for printing text to the window 
+                        and reading user inputs. Additionally, it also allows for a single program to create 
+                        and operate multiple windows in parallel. Major features include full RGB color support 
+                        for both text and backgrounds, along with built-in and extensible text displaying effects - 
+                        such as a "typewriter" effect.
                     </p>
                     <img src="csimg1.png" class="projImg" />
                     <img src="csimg2.png" class="projImg" />
                     <p class="centeredText infoText mainText">
-                        Placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder placeholder placeholder
-                        placeholder placeholder placeholder placeholder
+                        A core component of the framework is its custom syntax for embedding styling directly into 
+                        strings. I was inspired by the way HTML allows for simple styling to be embedded directly in a 
+                        .html file without needing a separate .css file. The ConsoleSharp equivalent loosely follows 
+                        HTML-style formatting for its embedded styling and uses a regular expression (regex) to interpret 
+                        it whenever printing a string. Additionally, the same styling functionality can also be achieved 
+                        through wrapping strings in the framework's custom TextBlock and Line classes, allowing for 
+                        multiple approaches depending on the context. The framework also allows for custom printing 
+                        effects to be created through simply inheriting from the base Effect class and overriding 
+                        the functionality of its API.
                     </p>
                 </div>
             </div>
             <div id="rightBar" class="sideBar faded">
                 <div class="sideTextCont">
                     <p class="centeredText factTitle sideText">Fun Fact</p>
-                    <p class="centeredText factText sideText">Placeholder placeholder placeholder placeholder</p>
+                    <p class="centeredText factText sideText">
+                        Supports creating and running any number of windows, even being able to run 
+                        without any windows being open.
+                    </p>
                 </div>
             </div>
         </div>
