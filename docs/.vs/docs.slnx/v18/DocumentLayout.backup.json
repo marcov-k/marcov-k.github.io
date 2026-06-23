@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\vec2\\vec2Styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projects\\vec2\\vec2Styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\projectStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projects\\projectStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\imdef\\imdefStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projects\\imdef\\imdefStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\imdef\\imdef.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projects\\imdef\\imdef.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\indexStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,46 +46,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "imdefStyles.css",
-              "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\imdef\\imdefStyles.css",
-              "RelativeDocumentMoniker": "Projects\\imdef\\imdefStyles.css",
-              "ToolTip": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\imdef\\imdefStyles.css",
-              "RelativeToolTip": "Projects\\imdef\\imdefStyles.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-06-08T05:05:57.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "imdef.html",
-              "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\imdef\\imdef.html",
-              "RelativeDocumentMoniker": "Projects\\imdef\\imdef.html",
-              "ToolTip": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\imdef\\imdef.html",
-              "RelativeToolTip": "Projects\\imdef\\imdef.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-06-08T05:05:53.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "vec2Styles.css",
+              "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\vec2\\vec2Styles.css",
+              "RelativeDocumentMoniker": "Projects\\vec2\\vec2Styles.css",
+              "ToolTip": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\vec2\\vec2Styles.css",
+              "RelativeToolTip": "Projects\\vec2\\vec2Styles.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-08T05:11:13.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "projectStyles.css",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\projectStyles.css",
               "RelativeDocumentMoniker": "Projects\\projectStyles.css",
               "ToolTip": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\projectStyles.css",
               "RelativeToolTip": "Projects\\projectStyles.css",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGIAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAGIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-06-08T03:38:35.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "projectScript.js",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\projectScript.js",
               "RelativeDocumentMoniker": "Projects\\projectScript.js",
@@ -101,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -113,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "indexStyles.css",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\indexStyles.css",
               "RelativeDocumentMoniker": "indexStyles.css",
@@ -121,12 +104,11 @@
               "RelativeToolTip": "indexStyles.css",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-02-07T00:51:26.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T00:51:26.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "indexScript.js",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\indexScript.js",
               "RelativeDocumentMoniker": "indexScript.js",

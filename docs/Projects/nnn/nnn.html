@@ -13,7 +13,7 @@
     <body>
         <div id="pageBody">
             <div id="topBar" class="bright">
-                <h1 id="nameText" class="centeredText projText">Neural Network Nonsense</h1>
+                <h1 id="nameText" class="centeredText projText">Neural Network Notions</h1>
                 <a href="https://github.com/marcov-k/NNN" id="repoLink" class="link">GitHub Repository</a>
             </div>
             <div id="leftBar" class="sideBar faded">
@@ -37,34 +37,35 @@
                     <p class="centeredText infoTitle mainText">Overview</p>
                     <p class="centeredText infoText mainText">
                         Originally started as a codebase for experimenting with small custom neural networks, 
-                        Neural Network Nonsense has evolved into being a full-scale neural network library. 
+                        Neural Network Notions has evolved into being a full-scale neural network library. 
                         The project strictly does not use any external libraries, relying solely on the C#
                         standard library and from-scratch implementations. The architecture is based on the PyTorch
                         autograd system to support advanced neural network operations in real-time via automatic 
-                        differentiation. I have recently succeeded in using the library to train neural networks 
-                        to play Tic-Tac-Toe and Snake relatively well. As of now, my future plans include adding 
-                        support for convolutional neural networks and proximal policy optimization (PPO) training.
+                        differentiation. Recent successes include successfully training a convolutional model for the MNIST 
+                        dataset of handwritten digits, and agents to play Tic-Tac-Toe and Snake. As of now, my 
+                        future plans include adding support for recursive neural networks and proximal policy 
+                        optimization (PPO) training.
                     </p>
                     <img src="nnnimg1.gif" class="projImg" />
                     <img src="nnnimg2.gif" class="projImg" />
                     <p class="centeredText infoText mainText">
-                        The most advanced capabilities of the current Neural Network Nonsense version include 
+                        The most advanced capabilities of the current Neural Network Notions version include 
                         using Deep Q-Network (DQN) training to train agents to operate in environments with 
                         discrete action spaces. The library provides a standard environment class and API which 
                         can be extended to train neural networks in nearly any discrete environment. I have 
-                        also implemented a basic file system which allows for trained neural networks to be 
-                        saved to and loaded from simple JSON files. Neural Network Nonsense also includes 
-                        a significant amount of standard neural network and training functions, such as a 
-                        variety of activation functions (hyperbolic tangent, rectified linear unit, etc.) 
-                        and multiple cost functions (mean squared error, pseudo-huber loss, etc.). The size of 
-                        the neural network required to effectively play... Tic-Tac-Toe... was too large for the 
-                        original number-based autograd implementation to handle at any reasonable speed, prompting 
-                        me to rewrite the system to operate at the tensor level. After achieving a proof of concept 
-                        and seeing the performance increase from the tensor system, I also decided to restructure the 
-                        internal tensor logic to use as few memory allocations as possible and leverage C#'s Single 
-                        Instruction, Multiple Data (SIMD) vectorization along with parallelization via CPU multithreading 
-                        to improve the performance even further. As a result, Neural Network Nonsense has become 
-                        my most advanced and long-running project.
+                        developed the custom .nnn file format for saving and loading trained models, with the 
+                        codebase including a specially-developed file viewer for reading the format. Neural 
+                        Network Nonsense also includes a significant amount of standard neural network and 
+                        training functions, such as a variety of activation functions (hyperbolic tangent, 
+                        rectified linear unit, etc.) and multiple cost functions (mean squared error, pseudo-huber 
+                        loss, etc.). The size of the neural network required to effectively play... Tic-Tac-Toe... 
+                        was too large for the original number-based autograd implementation to handle at any reasonable 
+                        speed, prompting me to rewrite the system to operate at the tensor level. After achieving 
+                        a proof of concept and seeing the performance increase from the tensor system, I also 
+                        decided to restructure the internal tensor logic to use as few memory allocations as possible 
+                        and leverage C#'s Single Instruction, Multiple Data (SIMD) vectorization along with 
+                        parallelization via CPU multithreading to improve the performance even further. 
+                        As a result, Neural Network Nonsense has become my most advanced and long-running project.
                     </p>
                 </div>
             </div>
