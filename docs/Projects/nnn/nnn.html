@@ -23,12 +23,13 @@
                 <div class="sideTextCont">
                     <p class="centeredText factTitle sideText">Fun Fact</p>
                     <p class="centeredText factText sideText">
-                        The project has gone through two complete refactors and one major refactor: 
+                        The project has gone through two complete refactors and two major refactors: 
                         switching from the original basic backpropagation system to number-based 
                         autograd-style automatic differentiation, replacing individual numbers with 
-                        tensors as the base nodes in the autograd graph, and restructuring all of 
+                        tensors as the base nodes in the autograd graph, restructuring all of 
                         the internal tensor logic to eliminate unnecessary memory allocations 
-                        and incorporate vectorization/parallelization.
+                        and incorporate vectorization/parallelization, and rewriting the tensor 
+                        backend in C++ to improve performance.
                     </p>
                 </div>
             </div>
@@ -38,8 +39,8 @@
                     <p class="centeredText infoText mainText">
                         Originally started as a codebase for experimenting with small custom neural networks, 
                         Neural Network Notions has evolved into being a full-scale neural network library. 
-                        The project strictly does not use any external libraries, relying solely on the C#
-                        standard library and from-scratch implementations. The architecture is based on the PyTorch
+                        The project strictly does not use any external libraries, relying solely on the C# and C++ 
+                        standard libraries and from-scratch implementations. The architecture is based on the PyTorch
                         autograd system to support advanced neural network operations in real-time via automatic 
                         differentiation. Recent successes include successfully training a convolutional model for the MNIST 
                         dataset of handwritten digits, and agents to play Tic-Tac-Toe and Snake. As of now, my 
