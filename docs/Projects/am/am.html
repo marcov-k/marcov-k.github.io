@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!-- Stylesheet containing colors for all pages -->
+    <link rel="stylesheet" href="../../colors.css" />
+    <link rel="stylesheet" href="../projColors.css" />
+    <link rel="stylesheet" href="../projectStyles.css" />
+    <link rel="stylesheet" href="amStyles.css" />
+    <title>Auto-Moeba</title>
+</head>
+<body>
+    <div id="pageBody">
+        <div id="topBar" class="bright">
+            <h1 id="nameText" class="centeredText projText">Auto-Moeba</h1>
+            <a href="https://github.com/marcov-k/Auto-Moeba" id="repoLink" class="link">GitHub Repository</a>
+        </div>
+        <div id="leftBar" class="sideBar faded">
+            <button id="homeButton" onclick="home()">
+                <p id="homeBText" class="centeredText">Home</p>
+            </button>
+            <div class="sideTextCont">
+                <p class="centeredText factTitle sideText">Fun Fact</p>
+                <p class="centeredText factText sideText">
+                    Although the simulation is written in C++, it is rendered through the C rendering library Raylib 
+                    rather than its C++ counterpart due to not requiring any complex object-oriented functionality 
+                    for the graphics themselves.
+                </p>
+            </div>
+        </div>
+        <div id="body" class="primary">
+            <div class="overviewCont">
+                <p class="centeredText infoTitle mainText">Overview</p>
+                <p class="centeredText infoText mainText">
+                    Auto-Moeba is a particle life simulation loosely based on Conway's Game of Life and inspired by 
+                    various other similar simulations I have come across. My primary purpose for developing the project 
+                    is to become more familiar with C++, particularly its inheritance and polymorphism systems, which 
+                    I did not need to use in my previous project involving the language - Neural Network Notions. 
+                    The simulation includes a variety of different particle types which interact in unique ways with 
+                    each other. Although Auto-Moeba is relatively simple, it is still capable of producing interesting 
+                    and complex behaviours given the right conditions.
+                </p>
+                <img src="amimg1.gif" class="projImg" />
+                <img src="amimg2.gif" class="projImg" />
+                <p class="centeredText infoText mainText">
+                    Particle movement is calculated using asymmetric Newtonian-style physics interactions. Each particle 
+                    attracts/repels every particle type by a given amount, which is then used in place of acceleration 
+                    for computing the motion of every particle using standard kinematics. Whenever a particle creates 
+                    an offspring, the attraction values of the new particle are randomly mutated, leading to changing 
+                    behaviours over time. A saving/loading system is also implemented using a custom .moeba file format, 
+                    enabling any unique and interesting setups to be revisited at a later time. A more detailed description 
+                    of both the particle types currently present in the simulation and the .moeba file format can be 
+                    found on the Auto-Moeba GitHub repository.
+                </p>
+            </div>
+        </div>
+        <div id="rightBar" class="sideBar faded">
+            <div class="sideTextCont">
+                <p class="centeredText factTitle sideText">Fun Fact</p>
+                <p class="centeredText factText sideText">
+                    This is my first project to handle its file management through the standard Windows API as 
+                    opposed to implementing its own more limited system, which allows the user to save and load 
+                    the simulation's state to and from any location on the hard drive.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="loadingCover"></div>
+    <script src="../projectScript.js"></script>
+</body>
+</html>

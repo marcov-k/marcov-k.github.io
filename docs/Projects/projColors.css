@@ -5,12 +5,18 @@
     --vec2-bright: rgb(2, 103, 5);
     --vec2-dark: rgb(0, 35, 1);
     --vec2-light: rgb(112, 193, 173);
-    /* Neural Network Nonsense */
+    /* Neural Network Notions */
     --nnn-primary: rgb(80, 88, 86);
     --nnn-faded: rgb(43, 48, 47);
     --nnn-bright: rgb(170, 181, 178);
     --nnn-dark: rgb(28, 47, 56);
     --nnn-light: rgb(124, 166, 186);
+    /* Auto-Moeba */
+    --am-primary: rgb(71, 116, 179);
+    --am-faded: rgb(5, 14, 107);
+    --am-bright: rgb(33, 61, 163);
+    --am-dark: rgb(1, 71, 16);
+    --am-light: rgb(44, 156, 3);
     /* Immune Defender */
     --imdef-primary: rgb(109, 0, 0);
     --imdef-faded: rgb(58, 0, 0);

@@ -1,0 +1,42 @@
+﻿.primary {
+    background-color: var(--am-primary);
+}
+.faded {
+    background-color: var(--am-faded);
+}
+.bright {
+    background-color: var(--am-bright);
+}
+.dark {
+    background-color: var(--am-dark);
+}
+.light {
+    background-color: var(--am-light);
+}
+#topBar {
+    border-top-color: var(--am-dark);
+    border-bottom-color: var(--am-light);
+}
+.sideBar {
+    border-color: var(--am-dark);
+    outline-color: var(--am-light);
+}
+.projImg {
+    border-color: var(--am-dark);
+}
+.sideText {
+    color: white;
+}
+.mainText {
+    color: white;
+}
+#nameText {
+    color: white;
+}
+#repoLink {
+    color: white;
+}
+#loadingCover {
+    background-color: var(--am-primary);
+    outline-color: var(--am-light);
+}

@@ -26,10 +26,14 @@ const infoTexts = Array.from(document.querySelectorAll('.infoLabel')).concat(Arr
 
 const loadingCover = document.getElementById('loadingCover');
 
-const projColors = [rootStyle.getPropertyValue('--vec2-primary'), rootStyle.getPropertyValue('--vec2-light'), rootStyle.getPropertyValue('--nnn-primary'),
-    rootStyle.getPropertyValue('--nnn-light'), rootStyle.getPropertyValue('--imdef-primary'), rootStyle.getPropertyValue('--imdef-light'), rootStyle.getPropertyValue('--first-primary'),
-    rootStyle.getPropertyValue('--first-light'), rootStyle.getPropertyValue('--ch-primary'), rootStyle.getPropertyValue('--ch-light'), rootStyle.getPropertyValue('--cs-primary'),
-    rootStyle.getPropertyValue('--cs-light'), rootStyle.getPropertyValue('--pm-primary'), rootStyle.getPropertyValue('--pm-light')];
+const projColors = [rootStyle.getPropertyValue('--vec2-primary'), rootStyle.getPropertyValue('--vec2-light'),
+    rootStyle.getPropertyValue('--nnn-primary'), rootStyle.getPropertyValue('--nnn-light'),
+    rootStyle.getPropertyValue('--am-primary'), rootStyle.getPropertyValue('--am-light'),
+    rootStyle.getPropertyValue('--imdef-primary'), rootStyle.getPropertyValue('--imdef-light'),
+    rootStyle.getPropertyValue('--first-primary'), rootStyle.getPropertyValue('--first-light'),
+    rootStyle.getPropertyValue('--ch-primary'), rootStyle.getPropertyValue('--ch-light'),
+    rootStyle.getPropertyValue('--cs-primary'), rootStyle.getPropertyValue('--cs-light'),
+    rootStyle.getPropertyValue('--pm-primary'), rootStyle.getPropertyValue('--pm-light')];
 
 const targetTitleScale = 0.5;
 const horizBlockEnd = 150;
@@ -292,11 +296,12 @@ function getProjColors(projName) {
     switch (projName) {
         case 'vec2': return [projColors[0], projColors[1]];
         case 'nnn': return [projColors[2], projColors[3]];
-        case 'imdef': return [projColors[4], projColors[5]];
-        case 'first': return [projColors[6], projColors[7]];
-        case 'ch': return [projColors[8], projColors[9]];
-        case 'cs': return [projColors[10], projColors[11]];
-        case 'pm': return [projColors[12], projColors[13]];
+        case 'am': return [projColors[4], projColors[5]];
+        case 'imdef': return [projColors[6], projColors[7]];
+        case 'first': return [projColors[8], projColors[9]];
+        case 'ch': return [projColors[10], projColors[11]];
+        case 'cs': return [projColors[12], projColors[13]];
+        case 'pm': return [projColors[14], projColors[15]];
         default: return null;
     }
 }
