@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\nnn\\nnn.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projects\\nnn\\nnn.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,8 +45,25 @@
               "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "nnn.html",
+              "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\nnn\\nnn.html",
+              "RelativeDocumentMoniker": "Projects\\nnn\\nnn.html",
+              "ToolTip": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\nnn\\nnn.html",
+              "RelativeToolTip": "Projects\\nnn\\nnn.html",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAACoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-07-05T16:02:03.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "projectStyles.css",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\projectStyles.css",
               "RelativeDocumentMoniker": "Projects\\projectStyles.css",
@@ -50,12 +71,11 @@
               "RelativeToolTip": "Projects\\projectStyles.css",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAF0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-06-08T03:38:35.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T03:38:35.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "projectScript.js",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\Projects\\projectScript.js",
               "RelativeDocumentMoniker": "Projects\\projectScript.js",
@@ -67,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -80,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "indexStyles.css",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\indexStyles.css",
               "RelativeDocumentMoniker": "indexStyles.css",
@@ -92,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "indexScript.js",
               "DocumentMoniker": "C:\\Users\\paren\\source\\repos\\marcov-k.github.io\\docs\\indexScript.js",
               "RelativeDocumentMoniker": "indexScript.js",

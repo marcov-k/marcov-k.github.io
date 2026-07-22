@@ -185,6 +185,7 @@ async function loadProject(projName) {
 
     if (colors) await loadCover(colors[0], colors[1]);
     else if (projName == 'unc') href = "UncertaintySolver/index.html";
+    else if (projName == 'chindex') href = "Chem-Helper/index.html";
 
     window.location.href = href;
 }
