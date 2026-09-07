@@ -27,12 +27,13 @@ const infoTexts = Array.from(document.querySelectorAll('.infoLabel')).concat(Arr
 const loadingCover = document.getElementById('loadingCover');
 
 const projColors = {
-    "vec2": [rootStyle.getPropertyValue('--vec2-primary'), rootStyle.getPropertyValue('--vec2-light')],
     "nnn": [rootStyle.getPropertyValue('--nnn-primary'), rootStyle.getPropertyValue('--nnn-light')],
-    "am": [rootStyle.getPropertyValue('--am-primary'), rootStyle.getPropertyValue('--am-primary')],
+    "am": [rootStyle.getPropertyValue('--am-primary'), rootStyle.getPropertyValue('--am-light')],
     "imdef": [rootStyle.getPropertyValue('--imdef-primary'), rootStyle.getPropertyValue('--imdef-light')],
     "first": [rootStyle.getPropertyValue('--first-primary'), rootStyle.getPropertyValue('--first-light')],
+    "c4": [rootStyle.getPropertyValue('--c4-primary'), rootStyle.getPropertyValue('--c4-light')],
     "ch": [rootStyle.getPropertyValue('--ch-primary'), rootStyle.getPropertyValue('--ch-light')],
+    "vec2": [rootStyle.getPropertyValue('--vec2-primary'), rootStyle.getPropertyValue('--vec2-light')],
     "cs": [rootStyle.getPropertyValue('--cs-primary'), rootStyle.getPropertyValue('--cs-light')],
     "pm": [rootStyle.getPropertyValue('--pm-primary'), rootStyle.getPropertyValue('--pm-light')]
 }
