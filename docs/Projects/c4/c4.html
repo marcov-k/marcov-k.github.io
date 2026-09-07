@@ -21,8 +21,8 @@
                 <p id="homeBText" class="centeredText">Home</p>
             </button>
             <div class="sideTextCont">
-                <p class="centeredText factTitle">Fun Fact</p>
-                <p class="centeredText factText">
+                <p class="centeredText factTitle sideText">Fun Fact</p>
+                <p class="centeredText factText sideText">
                     The project features a full-scale release pipeline, triggered whenever a new version tag is pushed, 
                     which automatically builds the game, packages the build into an installer via Inno Setup, and publishes 
                     the installer file as both a GitHub release and a new itch.io update.
@@ -31,8 +31,8 @@
         </div>
         <div id="body" class="primary">
             <div class="overviewCont">
-                <p class="centeredText infoTitle">Overview</p>
-                <p class="centeredText infoText">
+                <p class="centeredText infoTitle mainText">Overview</p>
+                <p class="centeredText infoText mainText">
                     CoNNect-Four is first and foremost a project to test and showcase the functionality of my custom Neural Network 
                     Notions (NNN) framework within the context of Unity games. The opponent AI agent is fully trained using the 
                     functionality implemented in NNN. The game's graphics are not particularly flashy as the emphasis is primarily on 
@@ -42,8 +42,7 @@
                 </p>
                 <img src="c4img1.gif" class="projImg" />
                 <img src="c4img2.png" class="projImg" />
-                <img src="c4img3.png" class="projImg" />
-                <p class="centeredText infoText">
+                <p class="centeredText infoText mainText">
                     The opponent agent for the game is a neural network combining multiple convolutional and dense layers to process 
                     the entire board state. Training is done using the Deep-Q Learning (DQN) training and self-play functionality available 
                     in NNN and the same agent is trained to play both the red and yellow player. For the software design of the game itself, 
@@ -56,8 +55,8 @@
         </div>
         <div id="rightBar" class="sideBar faded">
             <div class="sideTextCont">
-                <p class="centeredText factTitle">Fun Fact</p>
-                <p class="centeredText factText">
+                <p class="centeredText factTitle sideText">Fun Fact</p>
+                <p class="centeredText factText sideText">
                     In order to make the training of neural network agents as simple as possible, the code adds additional 
                     functionality to the editor including buttons to initialize; load; start training; and stop training agents, 
                     with the training itself being performed via an asynchronous task to allow the editor to be used normally throughout 

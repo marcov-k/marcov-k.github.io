@@ -28,6 +28,14 @@
     outline-color: var(--c4-light);
 }
 
+.sideText {
+    color: white;
+}
+
+.mainText {
+    color: white;
+}
+
 #loadingCover {
     background-color: var(--c4-primary);
     outline-color: var(--c4-light);

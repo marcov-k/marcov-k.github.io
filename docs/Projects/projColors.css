@@ -48,11 +48,11 @@
     --pm-dark: rgb(0, 27, 113);
     --pm-light: rgb(255, 255, 255);
     /* CoNNect-Four */
-    --c4-primary: rgb();
-    --c4-faded: rgb();
-    --c4-bright: rgb();
-    --c4-dark: rgb();
-    --c4-light: rgb();
+    --c4-primary: rgb(80, 80, 80);
+    --c4-faded: rgb(95, 2, 2);
+    --c4-bright: rgb(205, 179, 56);
+    --c4-dark: rgb(29, 31, 33);
+    --c4-light: rgb(15, 61, 96);
 }
 
 .vec2Primary {
