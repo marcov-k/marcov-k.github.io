@@ -53,6 +53,12 @@
     --c4-bright: rgb(205, 179, 56);
     --c4-dark: rgb(29, 31, 33);
     --c4-light: rgb(15, 61, 96);
+    /* Celestial-Rays */
+    --cr-primary: rgb(0, 0, 0);
+    --cr-faded: rgb(46, 75, 105);
+    --cr-bright: rgb(247, 217, 96);
+    --cr-dark: rgb(148, 85, 34);
+    --cr-light: rgb(56, 99, 47);
 }
 
 .vec2Primary {

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Stylesheet containing colors for all pages -->
+        <link rel="stylesheet" href="../../colors.css" />
+        <link rel="stylesheet" href="../projColors.css" />
+        <link rel="stylesheet" href="../projectStyles.css" />
+        <link rel="stylesheet" href="crStyles.css" />
+        <title>Celestial-Rays</title>
+    </head>
+    <body>
+        <div id="pageBody">
+            <div id="topBar" class="bright">
+                <h1 id="nameText" class="centeredText projText">Celestial-Rays</h1>
+                <a href="https://github.com/marcov-k/Celestial-Rays" id="repoLink" class="link">GitHub Repository</a>
+            </div>
+            <div id="leftBar" class="sideBar faded">
+                <button id="homeButton" onclick="home()">
+                    <p id="homeBText" class="centeredText">Home</p>
+                </button>
+                <div class="sideTextCont">
+                    <p class="centeredText factTitle sideText">Fun Fact</p>
+                    <p class="centeredText factText sideText">
+                        Rather than use an existing windowing library, the project hooks directly into the 
+                        Windows API to create its window and manage user inputs.
+                    </p>
+                </div>
+            </div>
+            <div id="body" class="primary">
+                <div class="overviewCont">
+                    <p class="centeredText infoTitle mainText">Overview</p>
+                    <p class="centeredText infoText mainText">
+                        I had an interest in trying my hand at GPU coding, in particular rendering via ray tracing, 
+                        for a considerable amount of time. Inspired by Sebastian Lague's various projects, I 
+                        decided to use my newly acquired understanding of C++ to build my own ray traced renderer 
+                        from scratch. To create an environment to render, I chose to also expand my previous C# 
+                        and Unity-based experiments with celestial simulations into a 3D simulation written fully 
+                        in C++. After considering various graphics API options, including OpenGL, I eventually 
+                        landed on using Vulkan for its modernity, prevalence in 3D graphics, and performance. 
+                        Celestial-Rays is also my first 3D project and has been an invaluable learning experience 
+                        when it comes to working in the third dimension.
+                    </p>
+                    <img src="crimg1.gif" class="projImg" />
+                    <img src="crimg2.png" class="projImg" />
+                    <p class="centeredText infoText mainText">
+                        Celestial-Rays is designed around an explicit division between physics simulation and 
+                        graphics rendering. The physical simulation runs on the CPU in C++, automatically 
+                        transitioning to multithreaded physics steps when sufficient celestial bodies are 
+                        present. On the other side, rendering is handled using a custom GLSL compute shader 
+                        implementing ray tracing functionality. All simulation state data required by the 
+                        shader is converted to an explicitly GLSL-compatible format prior to being passed to 
+                        the rendering pipeline. To gain more experience with low-level code and resource management 
+                        in C++, I also chose not to use any existing Vulkan framework and instead implement 
+                        the entire initialization and frame-rendering mechanism from scratch, becoming far more 
+                        familiar with concepts such as RAII (Resource Acquisition Is Initialization) in the process. 
+                        The simulation also features a custom material system allowing celestial bodies to have 
+                        various reflective, absorptive, and emissive properties.
+                    </p>
+                </div>
+            </div>
+            <div id="rightBar" class="sideBar faded">
+                <div class="sideTextCont">
+                    <p class="centeredText factTitle sideText">Fun Fact</p>
+                    <p class="centeredText factText sideText">
+                        The physical and visual sizes of all objects in the simulation can be set independently, 
+                        enabling physically accurate systems to be rendered with greater visibility.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="loadingCover"></div>
+        <script src="../projectScript.js"></script>
+    </body>
+</html>
